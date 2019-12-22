@@ -2,13 +2,29 @@
   action="https://formspree.io/xvozopre"
   method="POST"
 >
+  <style>
+   div  {
+     margin: 20px;
+   }
+   button {
+     margin: 20px;
+   }
+   #message {
+     width: 400px;
+     height: 300px;
+   }
+  </style>
   <div>
     Your Name(Optional):
+    <br>
     <input type="text" name="_replyto">
+    <br>
   </div>
   <div>
     Feedback:
-    <textarea name="message"></textarea>
+    <br>
+    <textarea name="message" id="message"></textarea>
+    <br>
   </div>
 
   <!-- your other form fields go here -->
