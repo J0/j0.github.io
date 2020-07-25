@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 <form
   action="https://formspree.io/xvozopre"
   method="POST"
@@ -19,18 +20,19 @@
   <div>
     Your Name(Optional):
     <br>
-    <input type="text" name="_replyto">
+    <input class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name(Optional)">
     <br>
   </div>
   <div>
     Feedback:
     <br>
-    <textarea name="message" id="message"></textarea>
+    <textarea class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="message" id="message" placeholder="Hi, ..."></textarea>
     <br>
   </div>
 
   <!-- your other form fields go here -->
-  
-  <button type="submit">Send</button>
+  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> 
+  Send
+  </button>
 </form>
 </html>
