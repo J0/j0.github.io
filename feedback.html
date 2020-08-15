@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html>
 <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-<form
-  action="https://formspree.io/xvozopre"
-  method="POST"
->
-  <style>
-   div  {
-     margin: 20px;
-   }
-   button {
-     margin: 20px;
-   }
-   #message {
-     width: 400px;
-     height: 300px;
-   }
-  </style>
-  <div>
-    Your Name(Optional):
-    <br>
-    <input class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name(Optional)">
-    <br>
-  </div>
-  <div>
-    Feedback:
-    <br>
-    <textarea class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="message" id="message" placeholder="Hi, ..."></textarea>
-    <br>
-  </div>
+<link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
+  <div class="with-sidebar">
+  <div> <!-- intermediary wrapper -->
 
-  <!-- your other form fields go here -->
-  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> 
-  Send
-  </button>
-</form>
+    <div>
+      <h1> <b>Example templates in this sidebar</b> </h1>
+     <ul>
+        <li> Magical Thing One </li>
+        <li> Magical Thing Two </li>
+        <li> Magical Thing Three </li>
+      </ul>
+    </div>
+      <!-- sidebar -->
+    <div class="non-sidebar-content">
+      <h1>Your Name(Optional):</h1>
+      <form action="https://formspree.io/xvozopre" method="POST">
+        <input class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name(Optional)">
+      <!-- non-sidebar -->
+      <br></br>
+      <textarea class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="message" id="message" placeholder="Hi, ..."></textarea>
+      <br></br>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Send
+    </button>
+    </form>
+    </div>
+  </div>
+  </div>
 </html>
