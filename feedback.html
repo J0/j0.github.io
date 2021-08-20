@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html>
-<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
-  <div class="with-sidebar">
-  <div> <!-- intermediary wrapper -->
-
-    <div>
-      <h1> <b>Example points</b> </h1>
-      </br>
-     <ul>
-        <li> What was done well</li>
-        <li> What was done poorly</li>
-	<li> What could be done better</li>
-      </ul>
-    </div>
-      <!-- sidebar -->
-    <div class="non-sidebar-content">
-      <h1>Your Name(Optional):</h1>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
+  <div class="grid grid-cols-6"> <!-- intermediary wrapper -->
+    <div class="col-start-2">
       <form action="https://formspree.io/xvozopre" method="POST">
+        <h1 class="my-4">Your Name(Optional):</h1>
         <input class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name(Optional)">
-      <!-- non-sidebar -->
-      <br></br>
-      <textarea class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="message" id="message" placeholder="Hi Joel, ..."></textarea>
-      <br></br>
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-      Send
-    </button>
-    </form>
+        <!-- non-sidebar -->
+        <br></br>
+        <textarea class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="message" id="message" placeholder="Hi Joel, ..."></textarea>
+        <br></br>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Send
+        </button>
+      </form>
     </div>
-  </div>
   </div>
 </html>
